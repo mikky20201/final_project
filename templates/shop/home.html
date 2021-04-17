@@ -10,8 +10,8 @@
   <section class="py-5 text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="h1 fw-bold">MEN SHIRTS FOR ALL SIZES</h1>
-        <p class="lead text-muted">Whatever the occasion, you’ll find the perfect shirt for you: from traditional cotton shirts to modern shirts with contemporary cuts and designs. Our range includes formal, casual and floral shirts – all made with our signature craftmanship.</p>
+        <h1 class="h2 fw-bold">QUALITY CLOTHES FOR DIFFERENT SIZES</h1>
+        <p class="lead text-muted">Whatever the occasion, you’ll find the perfect cloths for you: from traditional cotton shirts to modern female with contemporary cuts and designs. Our range includes formal, casual and floral shirts – all made with our signature craftmanship.</p>
         <p>
           <a href="#" class="btn btn-primary my-2">Make an account</a>
         </p>
@@ -29,27 +29,26 @@
 
         <div class="col">
           <div class="card shadow-sm">
-            <img class="img-fluid" alt="Responsive image" src="{{ product.image.url }}">
+            <img class="img-fluid" width="400px" alt="Responsive image" src="{{ product.image.url }}">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center">
-                <small class="text-muted">Non-Iron White Slim Fit Shirt</small>
-              </div>  
-              <p class="card-text">
-                <a class="text-dark text-center text-decoration-none" href="{{ product.get_absolute_url }}">{{ product.title }}</a> <br>
-                <a class="text-dark text-center text-decoration-none" href="{{ product.get_absolute_url }}">€{{ product.price }}</a>
+              <p class="text-center">
+                <a class="text-dark text-decoration-none text-muted" href="{{ product.get_absolute_url }}">{{ product.title }}</a>
+              </p>  
+              <p class="card-text text-center">
+                <a class="text-dark text-decoration-none ">€{{ product.price }}</a>
               </p>
-              
+             
             </div>
           </div>
         </div>
 
         {% endfor %}
-
+        
       </div>
     </div>
   </div>
 
-
+  
 </main>
 
 {% endblock %}
